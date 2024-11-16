@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="/css/subs.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Vitalis</div>
+        <nav>
+            <ul>
+                <li><a href="/index.htm">Home</a></li>
+                <li><a href="/html/login.html">Login / REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="subscription-plans">
+        <div class="plan-card basic" data-plan="Basic" data-price="$500">
+            <h3>$500</h3>
+            <ul>
+                <li>✔ Tendras acceso a cierta cantidad de libros </li>
+                <li>✔ Podras tener acceso a 3 conferencias</li>
+                <li>✔ Tendras estos beneficios durante un mes</li>
+            </ul>
+            <div class="icon">📋</div>
+            <h4>Basic</h4>
+        </div>
+        <div class="plan-card standard" data-plan="Standard" data-price="$1,500">
+            <h3>$1,500</h3>
+            <ul>
+                <li>✔ Acceso completo a revistas y libros científicos</li>
+                <li>✔ Contenido de universidades e investigadores</li>
+                <li>✔ Acceso a una gran variedad de conferencias</li>
+                <li>✔ Beneficios durante seis meses</li>
+            </ul>
+            <div class="icon">🤝</div>
+            <h4>Standard</h4>
+        </div>
+        <div class="plan-card premium" data-plan="Premium" data-price="$2,500">
+            <h3>$2,500</h3>
+            <ul>
+                <li>✔ Acceso completo a todos los libros y revistas científicas</li>
+                <li>✔ Conferencias con especialistas e investigadores</li>
+                <li>✔ Acceso a tesis de universidades y grandes investigadores</li>
+                <li>✔ Puedes subir tus investigaciones a la plataforma</li>
+                <li>✔ Beneficios durante un año</li>
+            </ul>
+            <div class="icon">💰</div>
+            <h4>Premium</h4>
+        </div>
+    </section>
+
+    <div class="modal-overlay"></div>
+    <div class="modal">
+        <h3>Enter Payment Details</h3>
+        <form id="payment-form">
+            <input type="text" id="card-name" placeholder="Nombre del respnsable" required>
+            <input type="number" id="card-number" placeholder="Numero de la tarjeta" required>
+            <input type="date" id="expiry-date" placeholder="Dia de expiracion" required>
+            <input type="number" id="cvv" placeholder="CVV" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="/js/sub.js"></script>
+</body>
+</html>
+
+</html>

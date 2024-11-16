@@ -1,0 +1,183 @@
+
+body, h1, h2, h3, h4, ul, li, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #1e271e, #006127);
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;
+}
+
+/* Subscription Plans */
+.subscription-plans {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 20px 0;
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.plan-card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.plan-card ul li {
+    margin: 8px 0;
+    color: #555;
+}
+
+.plan-card .icon {
+    font-size: 50px;
+    margin: 20px 0;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.plan-card.basic {
+    border-left: 6px solid #32CD32;
+}
+
+.plan-card.basic .icon {
+    background: #32CD32;
+}
+
+.plan-card.standard {
+    border-left: 6px solid #1E90FF;
+}
+
+.plan-card.standard .icon {
+    background: #1E90FF;
+}
+
+.plan-card.premium {
+    border-left: 6px solid #4B0082;
+}
+
+.plan-card.premium .icon {
+    background: #4B0082;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 300px;
+    max-width: 90%;
+}
+
+.modal h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal button:hover {
+    background-color: #218838;
+}

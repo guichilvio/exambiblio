@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header, .navbar {
+    background: linear-gradient(135deg, #0d0e13, #00613a);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7fffb;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+}
+.navbar a:hover {
+    color: #00df2d;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.conference {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conference-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.conference-content {
+    margin-left: 20px;
+}
+
+.conference-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.conference-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-watch {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.conference .fecha{
+    text-align: right;
+    color: #0d0e13;
+    font-size: 20px;
+}

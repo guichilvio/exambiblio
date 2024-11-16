@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitalis</title>
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="navbar">
+            <a href="/html/suscripcion.html">SUSCRIPCIONES</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">IDIOMA</a>
+                <div class="dropdown-content">
+                    <a href="#">Español</a>
+                    <a href="#">Inglés</a>
+                    <a href="#">Francés</a>
+                </div>
+            </div>
+            <a href="/html/login.html">LOGIN / REGISTER</a>
+        </div>
+
+        <h1 class="title">Vitalis</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button onclick="window.location.href='/html/nevegador.html'">Explorar</button>
+        </div>
+
+        <div class="card-section">
+            <div class="card">
+                <img src="/img/serv.jpg" alt="Imagen 1">
+                <p>Explora lo que ofrecemos en este navegador</p>
+            </div>
+            <div class="card">
+                <img src="/img/un.jpg" alt="Imagen 2">
+                <p>Puedes subir tus investigaciones para que los demás entusiastas puedan leer tu investigación</p>
+            </div>
+            <div class="card">
+                <img src="/img/sub.jpg" alt="Imagen 3">
+                <p>Puedes unirte a nosotros con una suscripción para acceder a contenido más especializado</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr class="separator-line">
+        <hr class="separator-line1">
+        <br>
+        <br>
+        <div class="new-card-section">
+            <div class="new-card">
+                <img src="/img/li.jpg" alt="Libros Digitales">     
+                <p>En este apartado podrás encontrar una gran variedad de libros certificados y revistas prestigiosas.</p>
+                <button onclick="window.location.href='/html/libreria.html'">Buscar Libros Digitales</button>
+            </div>
+            <div class="new-card">
+                <img src="/img/confe.jpg" alt="Conferencias Digitales">
+                <p>Encuentra una gran variedad de conferencias con grandes expositores y científicos reconocidos.</p>
+                <button onclick="window.location.href='/html/conferens.html'">Conferencias Digitales</button>
+            </div>
+            <div class="new-card">
+                <img src="/img/tes.jpg" alt="Tesis Digitales">
+                <br>
+                <p>Consulta en el catálogo las tesis recopiladas de grandes universidades e investigadores.</p>
+                <button onclick="window.location.href='/html/tesis.html'">Buscar Tesis Digitales</button>
+            </div>
+        </div>
+        <img src="/img/whatsapp.png" class="whatsapp-icon" alt="WhatsApp" onclick="toggleChat()">
+        
+     
+        <div id="whatsapp-chat" class="whatsapp-chat">
+            <p>Si quieres subir tu investigación comunícate con nosotros.</p>
+            <button onclick="toggleChat()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="/js/men.js"></script>
+</body>
+</html>

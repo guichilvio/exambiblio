@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(135deg, #0d0e13, #00613a);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.book:hover {
+    transform: scale(1.03);
+}
+
+.book img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.price span {
+    color: #f44336;
+}
+
+
